@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap");
+
+$text-color: #fff !default;
+$font-family-numbers: "Josefin Sans", sans-serif;
+$bg-color: #101214;
+$white: #fff;
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    background-color: $bg-color;
+    color: #7A7C80;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+h2, .white {
+    color: $white;
+}
+
+a {
+    color: #7A7C80;
+    text-decoration: none;
+}
+
+.personnal-informations {
+    padding-top: 40vh;
+    text-align: center;
+    p {
+        font-size: 1.1rem;
+        padding-bottom: 10px;
+        margin: 0px;
+    }
+
+    h2 {
+        font-size: 1.7rem;
+        margin-bottom: 10px;
+    }
+
+    a {
+        font-size: 1.5rem;
+        padding: 10px;
+        &:hover {
+            color: $white;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+    }
+}
+
+.dev-informations {
+    padding-top: 10vh;
+    width: 70%;
+    p {
+        font-size: 1.1rem;
+        padding-bottom: 10px;
+        margin: 0;
+    }
+
+    h2 {
+        font-size: 1.7rem;
+        margin-bottom: 10px;
+    }
+
+    a {
+        display: block;
+        padding: 5px;
+        font-size: 1.2rem;
+        padding-left: 0;
+        width: 100%;
+        &:hover {
+            font-size: 1.3rem;
+            color: $white;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+    }
+}
+
+.project {
+    border-radius: 1rem;
+    margin: 1rem 0;
+    padding: 0.5rem 1rem;
+    .name-link-wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.github-card {
+    box-shadow: inset 2px 2px 4px rgb(255, 255, 255), inset -2px -2px 4px rgb(255, 255, 255);
+}
+  
+.project-desc {
+    line-height: 1rem;
+}
+
+.tag {
+    border-radius: 0.5rem;
+    display: inline-block;
+    margin-bottom: 0.25rem;
+    padding: 0.5rem;
+}
+  
+.tag-wrapper {
+    margin: 1rem 0 0 0;
+}
+
+.skills .progress {
+    height: 50px;
+    display: block;
+    background: none;
+  }
+  
+.skills .progress .skill {
+    padding: 0;
+    margin: 0 0 6px 0;
+    text-transform: uppercase;
+    display: block;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    color: #050d18;
+}
+
+.skills .progress .skill .val {
+    float: right;
+    font-style: normal;
+}
+  
+.skills .progress-bar-wrap {
+    background: #dce8f8;
+}
+  
+.skills .progress-bar {
+    width: 1px;
+    height: 10px;
+    transition: .9s;
+    background-color: #149ddd;
+}
+  
+
+@media(max-width: 780px) {
+    .main {
+        grid-template-columns: 1fr;
+    }
+
+    .personnal-informations {
+        padding: 0;
+        padding-top: 5rem;
+    }
+
+    .dev-informations {
+        padding: 0;
+        padding-left: 1.5rem;
+        padding-top: 2rem;
+    }
+}

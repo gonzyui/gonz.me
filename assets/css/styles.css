@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway', sans-serif;
+  background-color: #101214;
+  color: #7A7C80;
+}
+
+.main {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+h2, .white {
+  color: #fff;
+}
+
+a {
+  color: #7A7C80;
+  text-decoration: none;
+}
+
+.personnal-informations {
+  padding-top: 40vh;
+  text-align: center;
+}
+
+.personnal-informations p {
+  font-size: 1.1rem;
+  padding-bottom: 10px;
+  margin: 0px;
+}
+
+.personnal-informations h2 {
+  font-size: 1.7rem;
+  margin-bottom: 10px;
+}
+
+.personnal-informations a {
+  font-size: 1.5rem;
+  padding: 10px;
+}
+
+.personnal-informations a:hover {
+  color: #fff;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.dev-informations {
+  padding-top: 10vh;
+  width: 70%;
+}
+
+.dev-informations p {
+  font-size: 1.1rem;
+  padding-bottom: 10px;
+  margin: 0;
+}
+
+.dev-informations h2 {
+  font-size: 1.7rem;
+  margin-bottom: 10px;
+}
+
+.dev-informations a {
+  display: block;
+  padding: 5px;
+  font-size: 1.2rem;
+  padding-left: 0;
+  width: 100%;
+}
+
+.dev-informations a:hover {
+  font-size: 1.3rem;
+  color: #fff;
+  cursor: pointer;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.project {
+  border-radius: 1rem;
+  margin: 1rem 0;
+  padding: 0.5rem 1rem;
+}
+
+.project .name-link-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.github-card {
+  -webkit-box-shadow: inset 2px 2px 4px white, inset -2px -2px 4px white;
+          box-shadow: inset 2px 2px 4px white, inset -2px -2px 4px white;
+}
+
+.project-desc {
+  line-height: 1rem;
+}
+
+.tag {
+  border-radius: 0.5rem;
+  display: inline-block;
+  margin-bottom: 0.25rem;
+  padding: 0.5rem;
+}
+
+.tag-wrapper {
+  margin: 1rem 0 0 0;
+}
+
+.skills .progress {
+  height: 50px;
+  display: block;
+  background: none;
+}
+
+.skills .progress .skill {
+  padding: 0;
+  margin: 0 0 6px 0;
+  text-transform: uppercase;
+  display: block;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  color: #050d18;
+}
+
+.skills .progress .skill .val {
+  float: right;
+  font-style: normal;
+}
+
+.skills .progress-bar-wrap {
+  background: #dce8f8;
+}
+
+.skills .progress-bar {
+  width: 1px;
+  height: 10px;
+  -webkit-transition: .9s;
+  transition: .9s;
+  background-color: #149ddd;
+}
+
+@media (max-width: 780px) {
+  .main {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .personnal-informations {
+    padding: 0;
+    padding-top: 5rem;
+  }
+  .dev-informations {
+    padding: 0;
+    padding-left: 1.5rem;
+    padding-top: 2rem;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
